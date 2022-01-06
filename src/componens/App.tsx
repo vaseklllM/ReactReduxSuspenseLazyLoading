@@ -16,7 +16,7 @@ export const App: React.FC = () => {
     <div className="App">
       <h1>Title</h1>
       <Suspense fallback={<Loader/>}>
-        <EntryList getEntries={getEntries}/>
+        <EntryList getEntries={getEntries} />
       </Suspense>
     </div>
   );

@@ -14,6 +14,13 @@ export const fetchEntries = async (dispatch: Dispatch): Promise<void> => {
   dispatch(Actions.changeLoading(true));
 
 
+  // const res: IResData = await new Promise(async (res) => {
+  //   const r = await fetch('https://swapi.dev/api/people')
+  //   setTimeout(async () => {
+  //     const data: IResData = await r.json()
+  //     res(data)
+  //   }, 2000)
+  // })
   const res = await fetch('https://swapi.dev/api/people')
   const data: IResData = await res.json()
 
