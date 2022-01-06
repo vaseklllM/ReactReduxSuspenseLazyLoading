@@ -10,7 +10,8 @@ interface IResData {
   }[]
 }
 
-export const fetchEntries = async (dispatch: Dispatch): Promise<void> => {
+export const fetchEntries = async (dispatch: Dispatch, isData: boolean): Promise<void> => {
+  if (isData) return undefined
   dispatch(Actions.changeLoading(true));
 
 
