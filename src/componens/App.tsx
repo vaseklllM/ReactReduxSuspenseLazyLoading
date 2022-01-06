@@ -4,7 +4,7 @@ import {Loader} from "./Loader";
 import {fetchEntries} from "../operations";
 import {RootState} from "../types";
 import {Dispatch} from "redux";
-// import {EntryList} from "./EntryList";
+
 const EntryList = lazy(() => import("./EntryList"))
 
 export const App: React.FC = () => {
